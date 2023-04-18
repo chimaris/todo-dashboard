@@ -1,6 +1,6 @@
 const ProgressBar = (props) => {
     const { bgColor, completed } = props;
-  
+        
     const fillerStyles = {
       backgroundColor: bgColor,
       borderRadius: 'inherit',

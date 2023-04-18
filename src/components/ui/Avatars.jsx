@@ -6,7 +6,7 @@ const images = [
     {id : 3, img : {image}},
 ]
 const Avatars = ({w}) => {
-// w-${w} h-${h}
+
     return (
       <div className="flex items-center justify-center">
         <img
@@ -32,8 +32,6 @@ const Avatars = ({w}) => {
             className="object-contain mb-3 rounded-full w-10 h-10 ml-[-10px] border-2 border-[#fff]"
           />
         ))} */}
-  
-        
       </div>
     );
   };

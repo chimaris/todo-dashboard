@@ -32,22 +32,22 @@ const Sidebar = () => {
       </div>
       <div className='border-b border-[#FFFFFF] mt-10'>
          {sidebarNavList.map(category => (
-                <NavLink key={category.name} to={category.link}>
-                    <button className='flex items-center justify-start gap-2 font-medium text-sm cursor-pointer px-2 pb-8'>
-                        <img src={category.icon} alt="" />
-                        <span>{category.name}</span>
-                    </button>
-                </NavLink>
+            <NavLink key={category.name} to={category.link}>
+                <button className='flex items-center justify-start gap-2 font-medium text-sm cursor-pointer px-2 pb-8'>
+                    <img src={category.icon} alt="" />
+                    <span>{category.name}</span>
+                </button>
+            </NavLink>
             ))}
       </div>
       <div className='mt-10'>
          {sidebarNavList2.map(category => (
             <NavLink key={category.name} to={category.link}>
-                    <button className='flex items-center justify-start gap-2 font-medium text-sm cursor-pointer px-2 pb-8'>
-                        <img src={category.icon} alt="" />
-                        <span>{category.name}</span>
-                    </button>
-                </NavLink>
+                <button className='flex items-center justify-start gap-2 font-medium text-sm cursor-pointer px-2 pb-8'>
+                    <img src={category.icon} alt="" />
+                    <span>{category.name}</span>
+                </button>
+            </NavLink>
            ))}
       </div>
 

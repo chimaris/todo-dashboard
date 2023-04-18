@@ -7,7 +7,6 @@ import iconPower from '../../assets/icons/icon-power.svg'
 import iconBlackPlus from '../../assets/icons/icon-plus-black.svg'
 
 
-
 const NavList = [
     {name: 'Participants View', link: '', icon: iconParticipants},
     {name: 'Board View', link: '', icon: iconBoard},
