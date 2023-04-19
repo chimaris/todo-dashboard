@@ -6,10 +6,10 @@ import IconthreeDots from '../../assets/icons/icon-three-dots.svg'
 import ProgressBar from '../ui/ProgressBar'
 
 
-const TodoCard = ({title, subTitle, img, progress, message, totalShare, key, bgColor}) => {
+const TodoCard = ({title, subTitle, img, progress, message, totalShare, bgColor}) => {
     
     return (
-        <div className='flex flex-col gap-2 mt-4 p-4 bg-white rounded-xl' key={key}>
+        <div className='flex flex-col gap-2 mt-4 p-4 bg-white rounded-xl'>
             {img ? (<img src={img} alt="card image" />) : null}
             <div className='flex justify-between'>
                 <div>

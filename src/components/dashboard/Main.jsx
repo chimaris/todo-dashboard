@@ -22,7 +22,7 @@ const Main = () => {
               <span className='font-medium text-[#858A93]'>To Do</span>
               <span className='py-2 px-3 bg-black rounded text-white'>3</span>
             </div>
-            {/* filter Todo that are in 0 progress */}
+            {/* filter Todo that are in 0% progress */}
             <div className='mt-6'>
               {Todos.map((todo, index) => { return todo.progress === 0 ? (
                   <TodoCard title={todo.title} subTitle={todo.subTitle} img={todo.img} progress={todo.progress} message={todo.message} totalShare={todo.totalShare} bgColor={'#EBEBEB'} key={index} />
@@ -36,7 +36,7 @@ const Main = () => {
               <span className='font-medium text-[#858A93]'>Inprogress</span>
               <span className='py-2 px-3 bg-black rounded text-white'>1</span>
           </div>
-          {/* filter Todo that are more than 0 progress */}
+          {/* filter Todo that are more than 0% progress and less than 100% */}
           <div className='mt-6'>
             {Todos.map((todo, index) => { return todo.progress > 0 && todo.progress <= 99 ? (
                 <TodoCard title={todo.title} subTitle={todo.subTitle} img={todo.img} progress={todo.progress} message={todo.message} totalShare={todo.totalShare} bgColor={'#FF5F37'} key={index} />
@@ -50,7 +50,7 @@ const Main = () => {
               <span className='font-medium text-[#858A93]'>Completed</span>
               <span className='py-2 px-3 bg-black rounded text-white'>2</span>
             </div>
-           {/* filter Todo that are in 100 progress / completed */}
+           {/* filter Todo that are in 100% progress / completed */}
            <div className='mt-6'>
             {Todos.map((todo, index) => { return todo.progress === 100 ? (
                 <TodoCard title={todo.title} subTitle={todo.subTitle} img={todo.img} progress={todo.progress} message={todo.message} totalShare={todo.totalShare} bgColor={'#8BC488'} key={index} />

@@ -7,7 +7,7 @@ const Dashboard = () => {
   return (
     <div className='flex w-full'>
         <Sidebar/>
-        <div className='bg-[#FCFBFC] rounded-r-lg w-full'>
+        <div className='bg-[#FCFBFC] rounded-r-xl w-full'>
             <Header/>
             <Main/>
         </div>
