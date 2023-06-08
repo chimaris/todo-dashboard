@@ -25,7 +25,7 @@ const sidebarNavList2 = [
 
 const Sidebar = () => {
   return (
-    <div className='flex flex-col h-[1024px] w-[272px] bg-[#1D1042] text-white px-8 py-10 rounded-l-xl'>
+    <div className='hidden lg:flex flex-col h-[1024px] w-[272px] bg-[#1D1042] text-white px-8 py-10 rounded-l-xl'>
       <div className='flex justify-around items-center gap-1 bg-[#45269C] w-[208px] h-[46px] py-3 px-7 rounded-lg'>
         <img src={iconProfile} alt="logo" />
         <h1 className='text-base'>Welcome Keerthi</h1>

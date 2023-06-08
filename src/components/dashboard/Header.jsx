@@ -16,21 +16,21 @@ const NavList = [
 
 const Header = () => {
   return (
-    <div className='bg-white px-16 pt-10 pb-6'>
-        <div className='flex justify-between items-center'>
-            <div className='w-[700px]'>
-                <h1 className='font-semibold text-[38px]'>New Campaign Run</h1>
+    <div className='bg-white lg:px-16 px-2 pt-10 pb-6 w-full'>
+        <div className='flex flex-col lg:flex-row justify-between lg:items-center'>
+            <div className='lg:w-[700px]'>
+                <h1 className='font-semibold text-3xl lg:text-[38px]'>New Campaign Run</h1>
                 <p className='text-[#B8B9BD]'>A new campaign launch work for brand new feature in May month</p>
             </div>
             <button className='p-3 bg-black rounded-lg text-white text-sm font-medium'>ADD MEMBERS</button>
         </div>
          {/* Nav Menu */}
-        <div className='flex justify-between items-center mt-14'>
+        <div className='flex flex-col lg:flex-row lg:justify-between items-center mt-14'>
             <div className='flex items-center gap-2'>
                 <Avatars w={10}/>
                 <span className='text-[#B8B9BD]'>8 members</span>
             </div>
-            <div className='flex gap-2 items-center justify-between'>
+            <div className='flex gap-2 items-center lg:justify-between'>
                 {NavList.map(category => (
                     <NavLink key={category.name} to={category.link}>
                             <button className='flex items-center gap-2 font-medium text-sm cursor-pointer px-2 py-2'>
